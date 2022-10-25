@@ -51,7 +51,7 @@ const corsProxy = async (event) => {
         headers: {
           'Access-Control-Allow-Origin': '*', // Required for CORS support to work
           'Access-Control-Allow-Credentials': true, // Required for cookies, authorization headers with HTTPS
-          'content-type': res.headers['content-type'],
+          'content-type': res.headers.get('content-type'),
         },
       };
 
