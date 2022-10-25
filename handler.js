@@ -1,6 +1,6 @@
 'use strict';
 
-const fetch = require('node-fetch');
+import fetch from 'node-fetch'
 
 /**
  * Use this command to launch the handler from console:
@@ -11,7 +11,7 @@ const fetch = require('node-fetch');
  *
  * http://localhost:3000/?url=https://github.com
  */
-module.exports.corsProxy = async (event) => {
+const corsProxy = async (event) => {
   return new Promise(async (resolve, reject) => {
     let params = event.queryStringParameters;
     let { Host, host, Origin, origin, ...headers } = event.headers;
@@ -66,3 +66,5 @@ module.exports.corsProxy = async (event) => {
     }
   });
 };
+
+export { corsProxy }

@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "cors-proxy",
   "version": "1.0.0",
   "description": "CORS proxy",
@@ -7,10 +8,10 @@
     "offline": "node_modules/.bin/serverless offline"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "serverless": "^2.1.1"
+    "node-fetch": "^3.2.10",
+    "serverless": "^3.23.0"
   },
   "devDependencies": {
-    "serverless-offline": "^6.7.0"
+    "serverless-offline": "^11.1.3"
   }
 }
